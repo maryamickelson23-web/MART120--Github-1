@@ -1,31 +1,36 @@
 
 body {
     background-color: #DAB1DA;
-    background-image: url("flowertile.jpg");
-    background-blend-mode: luminosity;
+    background-image: url("images/FlowerTile.JPG");
+    background-blend-mode:luminosity;
 }
 
 .content{
     font-family: 'Courier New', Courier, monospace, sans-serif;
 
-    color: #161d2e; 
+    color: #efe7e7; 
     text-decoration: none; 
     font-size: 24px;
 }
 
 .title {
     font-family: 'Courier New', Courier, monospace, sans-serif;
-    color: #161d2e;
+    color: #eceef2;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
 }
-
+h2{
+    color:#efe7e7;
+}
+i{
+    color: #efe7e7;}    
+    
 #home{
     color:bisque;   
 }
 #contact{
-    color:gray;
+    color:rgb(229, 222, 222);
 }
 a:hover { 
     text-decoration: underline; 
@@ -33,7 +38,7 @@ a:hover {
 
 a {
     text-decoration: none;
-    color: #161d2e;
+    color: #acb4c8;
     font-size: 20px;
     font-weight: 600;
 }
