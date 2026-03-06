@@ -1,0 +1,45 @@
+
+body {
+    background-color: #DAB1DA;
+    background-image: url("flowertile.jpg");
+    background-blend-mode: luminosity;
+}
+
+.content{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+
+    color: #161d2e; 
+    text-decoration: none; 
+    font-size: 24px;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: #161d2e;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#home{
+    color:bisque;   
+}
+#contact{
+    color:gray;
+}
+a:hover { 
+    text-decoration: underline; 
+}
+
+a {
+    text-decoration: none;
+    color: #161d2e;
+    font-size: 20px;
+    font-weight: 600;
+}
+.gallery {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
