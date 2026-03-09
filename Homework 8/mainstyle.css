@@ -1,0 +1,58 @@
+
+.content{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+
+    color: #efe7e7; 
+    text-decoration: none; 
+    font-size: 24px;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: #eceef2;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+h2{
+    color:#050404;
+}
+i{
+    color: #0d0c0c;}    
+    
+#home{
+    color:rgb(10, 9, 9);   
+}
+#contact{
+    color:rgb(22, 21, 21);
+}
+a:hover { 
+    text-decoration: underline; 
+}
+
+a {
+    text-decoration: none;
+    color: #acb4c8;
+    font-size: 20px;
+    font-weight: 600;
+}
+.gallery {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-error:focus, .input-error {
+  border: 2px solid red !important;
+  background-color: #ffe6e6 !important;
+  outline: 2px solid red !important;
+  box-shadow: 0 0 4px 2px #ffb3b3 !important;
+}
+
+input.input-error[type="email"], input.input-error[type="password"] {
+  border: 2px solid red !important;
+  background-color: #ffe6e6 !important;
+  outline: 2px solid red !important;
+  box-shadow: 0 0 4px 2px #ffb3b3 !important;
+}

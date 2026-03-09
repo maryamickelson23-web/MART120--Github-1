@@ -1,0 +1,14 @@
+
+.input-error:focus, .input-error {
+  border: 2px solid red !important;
+  background-color: #ffe6e6 !important;
+  outline: 2px solid red !important;
+  box-shadow: 0 0 4px 2px #ffb3b3 !important;
+}
+
+input.input-error[type="email"], input.input-error[type="password"] {
+  border: 2px solid red !important;
+  background-color: #ffe6e6 !important;
+  outline: 2px solid red !important;
+  box-shadow: 0 0 4px 2px #ffb3b3 !important;
+}

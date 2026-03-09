@@ -1,0 +1,97 @@
+<html>
+<title>Page 2</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    </head>
+     <head>
+      
+            </head>
+<script>  
+  function validateForm() 
+  {
+    var emailInput = document.getElementById("exampleInputEmail1");
+    var passwordInput = document.getElementById("exampleInputPassword1");
+    var email = emailInput.value.trim();
+    var password = passwordInput.value.trim();
+    var valid = true;
+    // Remove previous error styles
+    emailInput.classList.remove("input-error");
+    passwordInput.classList.remove("input-error");
+    // Check and style empty fields
+    let firstInvalid = null;
+    if (email === "") {
+      emailInput.classList.add("input-error");
+      if (!firstInvalid) firstInvalid = emailInput;
+      valid = false;
+    }
+    if (password === "") {
+      passwordInput.classList.add("input-error");
+      if (!firstInvalid) firstInvalid = passwordInput;
+      valid = false;
+    }
+    if (!valid) {
+      if (firstInvalid) {
+        setTimeout(function() { firstInvalid.focus(); }, 0);
+      }
+      alert("Please fill out all fields.");
+      return false;
+    }
+    return true;
+  }
+</script>           
+    <body bgcolor="#DAB1DA"></body>
+    
+    <body>
+    <h1>Contact Us</h1>
+    <div class="container">
+        <form onsubmit="return validateForm();">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button> 
+</form>
+    </div>
+    <p>Feel free to reach out to us with any questions or feedback!</p>
+    <form id="termsForm" action="">
+        <p>First Name: <input type="text" name="firstName"></p>
+        <p>Last Name: <input type="text" name="lastName"></p>
+        <p>Email: <input type="email" name="email"></p>
+        <p>Message: <textarea name="message"></textarea></p>
+        <h3>Do you accept our Terms and Conditions?</h3>
+        <select name="terms" id="termsSelect">
+            <option value="I accept Terms and Conditions">I accept Terms and Conditions</option>
+            <option value="I do not accept Terms and Conditions">I do not accept Terms and Conditions</option>
+        </select>
+        <br><br>
+        <button type="button" onclick="submitTerms()" class="btn btn-success">Submit Terms</button>
+    </form>
+    <script>
+      function submitTerms() {
+        var select = document.getElementById('termsSelect');
+        var value = select.value;
+        // Remove previous error style
+        select.classList.remove('input-error');
+        if (value === 'I accept Terms and Conditions') {
+          alert('Thank you for accepting the Terms and Conditions!');
+        } else {
+          select.classList.add('input-error');
+          setTimeout(function() { select.focus(); }, 0);
+          alert('You must accept the Terms and Conditions to proceed.');
+        }
+      }
+    </script>
+    <p><a href="Page1-homework7.html">Back to Home Page</a></p>
+    <p><a href="hw7Webpage2.html">Back to Book Page</a></p>
+    
+   </body>
+   <html>
